@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="../reset.css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Italiana&family=Quicksand:wght@500&family=Tangerine:wght@700&family=Unbounded&display=swap"
+        rel="stylesheet"><!-- Ícono -->
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1670858954/Barberia%20Alura/icons8-silla-de-peluquero-50_lzvyf3.png" />
+    <!-- Título -->
+    <title>Contacto | Salón Masculino</title>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid barra">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse barra-lista" id="navbarTogglerDemo01">
+                <a class="navbar-brand icono-navbar ms-3" href="../index.html">
+                    <img src="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1670940231/Barberia%20Alura/ANDI_rkmv2p.jpg"
+                        alt="Logo de la Página Web">
+                </a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="../pages/productos.html">Cortes</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link text-light disabled" href="#">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="../index.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item contacto">
+                        <a class="nav-link  text-light" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <form action="">
+
+            <label for="nombre-apellido">Nombre y Apellido</label>
+            <input type="text" name="" id="nombre-apellido" class="input-padron" required placeholder="Juan Perez">
+
+            <label for="correo-electronico">Correo Electrónico</label>
+            <input type="email" name="" id="correo-electronico" class="input-padron" required
+                placeholder="juan_perez@gmail.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="" id="telefono" class="input-padron" required
+                placeholder="(XXXX) (XXXXXX) sin 0 ni 15">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="teléfono"
+                        id="radio-telefono">Teléfono</label>
+
+
+                <label for="radio-wsp"><input type="radio" name="contacto" value="WhatsApp" id="radio-wsp"
+                        checked>WhatsApp</label>
+
+            </fieldset>
+
+            <legend>¿En qué horario prefiere ser atendido?</legend>
+
+            <select name="" id="">
+                <option value="">Mañana</option>
+                <option value="">Tarde</option>
+                <option value="">Indistinto</option>
+            </select>
+
+            <div>
+
+            </div>
+
+            <label class="checkbox" for=""><input checked type="checkbox" name="" id="">¿Le gustaría recibir novedades
+                de la
+                Barbería?</label>
+
+            <input type="submit" name="" id="" value="Enviar" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Días</th>
+                    <th>Horarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td class="horarios">08h - 12h / 16h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td class="horarios">08h - 12h / 16h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td class="horarios">08h - 12h / 16h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td class="horarios">08h - 12h / 16h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td class="horarios">08h - 12h / 16h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td class="horarios">08h - 12h</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <p class="copyright">&copy; Copyright Barbería Andino - 2022</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="../js/codigo.js"></script>
+</body>
+
+</html>

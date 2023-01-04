@@ -1,28 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./reset.css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Íconos -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Quicksand:wght@500&family=Tangerine:wght@700&family=Unbounded&display=swap"
+        rel="stylesheet"><!-- Ícono -->
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1670858954/Barberia%20Alura/icons8-silla-de-peluquero-50_lzvyf3.png" />
+    <!-- Título -->
+    <title>Andino | Salón Masculino</title>
 </head>
+
 <body>
-    
-    <canvas width="600" height="400"> </canvas>
+    <!-- Barra de NAvegación -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid barra">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse barra-lista" id="navbarTogglerDemo01">
+                <a class="navbar-brand icono-navbar ms-3" href="./index.html">
+                    <img src="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1670940231/Barberia%20Alura/ANDI_rkmv2p.jpg"
+                        alt="Logo de la Página Web">
+                </a>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="./pages/productos.html" href="./pages/productos.html">Cortes</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link text-light disabled" href="#">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item contacto">
+                        <a class="nav-link  text-light" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <!-- Sección Hero -->
+        <section class="hero" id="hero">
+            <h1> <strong>Andino</strong></h1>
+            <h2>Salón Masculino</h2>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section class="sobre-nosotros" id="sobre-nosotros">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <h2 class="p-4 ">Sobre la Barbería Alura</h2>
+                <div class="cuerpo d-flex flex-row justify-content-between align-items-center">
+                    <div class="imagen-utensilios">
+                        <img class="utensilios"
+                            src="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1672090789/Barberia%20Alura/utensilios_1_zcn84i.jpg"
+                            alt="Imagen de utensilios de barbero">
+                    </div>
+                    <div class="sobre-andino">
+                        <p class="fs-5 text-white">Ubicada en el corazón de la ciudad, la <strong>Barbería
+                                Alura</strong>
+                            trae
+                            para el mercado lo que hay de
+                            mejor
+                            para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y
+                            conquista
+                            nuevos
+                            clientes diariamente.</p>
+                        <p class="fs-5 text-white"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de
+                                    vida
+                                    a
+                                    nuestros
+                                    clientes"</strong>.</em>
+                        </p>
+                        <p class="fs-5 text-white">Ofrecemos profesionales experimentados que están constantemente
+                            observando
+                            los cambios y movimiento en el
+                            mundo
+                            de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento
+                            posee
+                            un
+                            padrón
+                            de
+                            excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<div class="principal">
+
+    <section class="mapa container">
+
+        <h3>Nuestra Ubicación</h3>
+
+        <p>Nuestro establecimiento está ubicado en el corazón de la Ciudad de Reconquista - Belgrano 650</p>
+        <div class="mapa-contenido">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d366.28600149542973!2d-59.64602954108133!3d-29.14346716630969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1672093142776!5m2!1ses-419!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-    <h1>Sobre la Barbería Alura</h1>
-    <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
-    <p><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
-    <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+        </div>
+    </section>
+
+    <section class="diferenciales container">
+
+        <h3 class="text-center">Diferenciales</h3>
+
+        <div class="contenido-diferenciales">
+
+            <ul class="lista-diferenciales">
+                <li class="items">Atención personalizada a los clientes</li>
+                <li class="items">Espacio diferenciado</li>
+                <li class="items">Localización</li>
+                <li class="items">Profesionales calificados</li>
+                <li class="items">Puntualidad</li>
+                <li class="items">Limpieza</li>
+            </ul><img class="imagen-diferenciales"
+                src="https://res.cloudinary.com/dbaqfw9vn/image/upload/v1672321693/Barberia%20Alura/diferenciales_p0eaai.jpg"
+                alt="Imagen de diferenciales">
+
+        </div>
+
+    </section>
 
 
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+</div>
+
+    </main>
 
 
+    <section class="redes-sociales">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <h2>Nuestras Redes <i class="bi bi-arrow-right-circle"></i></h1>
+                <div class="iconos p-2 d-flex flex-wrap align-items-center justify-content-center">
+                    <a class="p-4" href="" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="p-4" href="" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a class="p-4" href="" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+        </div>
+    </section>
 
+    <!-- Background Footer -->
+    <div class="custom-shape-divider-bottom-1671138750">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="./js/codigo.js"></script>
 </body>
+
 </html>
